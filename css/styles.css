@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* HEADER AREA */
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #171717;
+}
+/* Logo area */
+.logo {color: #fff;}
+
+.logo span{color: #ffa500;}
+
+/* Dropdown area*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 13px;
+}
+/* Botão do dropdown */
+.dropbtn {
+    border: none;
+    transition: 0.2s;
+    background-color: rgba(0,0,0,0);
+}
+/* Conteudo do dropdown (escondido) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -29px;
+    top: 71px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+/* Links dentro do menu */
+.dropdown-content a {
+    color: black;
+    background-color: #ffa500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s;
+}
+/* muda a cor de fundo no hover */
+.dropdown-content a:hover {background-color: #e49500;}
+/* Mostra o conteudo quando clica */
+.dropdown:hover .dropdown-content {display: block;}
+/* Gira o Botão quando clica */
+.dropdown:hover .dropbtn {transform: scale(150%);}
+
+/* HEADER AREA */
