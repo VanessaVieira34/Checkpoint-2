@@ -1,0 +1,7 @@
+.banner{
+    background-image: url(../img/laodesk.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
