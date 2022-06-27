@@ -46,7 +46,7 @@ header {
 /* Botão do dropdown */
 .dropbtn {
     border: none;
-    transition: 0.2s;
+    transition: 0.4s;
     background-color: rgba(0,0,0,0);
 }
 /* Conteudo do dropdown (escondido) */
