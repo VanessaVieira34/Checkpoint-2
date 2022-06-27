@@ -167,3 +167,9 @@ footer {
 /* ajuste de margem */
 .footer-card p{margin-bottom: 5px;}
 .footer-card a{margin-right: 10px;}
+
+@media(min-width: 700px){
+   footer{
+       display: flex;
+       flex-direction: row;
+   }
