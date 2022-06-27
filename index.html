@@ -1,134 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Series Mesmo 👀</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Series Mesmo 👀</title>
 </head>
+
 <body>
   <!-- HEADER/COMEÇO -->
-    <header>
-      <!-- logo -->
-      <div class="logo">
-        <a href="index.html">
-          <h1>Serie<span class="cor-laranja">Mesmo</span></h1>
-        </a>
+  <header>
+    <!-- logo -->
+    <div class="logo">
+      <a href="index.html">
+        <h1>Serie<span class="cor-laranja">Mesmo</span></h1>
+      </a>
+    </div>
+    <!-- Menu/Dropdown -->
+    <nav class="dropdown">
+      <button class="dropbtn">
+        <img src="img/menu.svg" alt="">
+      </button>
+      <div class="dropdown-content">
+        <a href="#home">Home</a>
+        <a href="#cards">Series</a>
+        <a href="login.html">Login</a>
+        <a href="#footer">Sobre nós</a>
       </div>
-      <!-- Menu/Dropdown -->
-      <nav class="dropdown">
-        <button class="dropbtn">
-          <img src="img/menu.svg" alt="">
-        </button>
-        <div class="dropdown-content">
-          <a href="#home">Home</a>
-          <a href="#cards">Series</a>
-          <a href="login.html">Login</a>
-          <a href="#footer">Sobre nós</a>
-        </div>
-      </nav>
-    </header>
-    <!-- HEADER/FINAL -->
-    <!-- CONTEUDO PRINCIPAL -->
-    <main>
- <!-- Banner ok -->
-      <div class="banner" id="home">
-        <h2>
-          Serie<span class="cor-laranja">Mesmo</span>
-        </h2>
-        <p>
-          Um site que fala de series mesmo
+    </nav>
+  </header>
+  <!-- CONTEUDO PRINCIPAL -->
+  <main>
+    <!-- Banner ok -->
+    <div class="banner" id="home">
+      <h2>
+        Serie<span class="cor-laranja">Mesmo</span>
+      </h2>
+      <p>
+        Um site que fala de series mesmo
+      </p>
+      <button onclick="window.location.href='#cards'">Explorar</button>
+    </div>
+    <!-- Cards -->
+    <div class="card-area" id="cards">
+      <h2 class="cor-preto">Series</h2>
+      <!-- game of trhones -->
+      <div class="card">
+        <img src="img/gotdesk.jpg" alt="Game of Thrones">
+        <h3 class="cor-preto">Game Of Thrones</h3>
+        <p class="cor-preto">
+          Situada nos continentes fictícios de Westeros e Essos, a série centra-se no Trono de Ferro dos Sete Reinos e
+          segue um enredo de alianças e conflitos entre as famílias nobres dinásticas,
+          seja competindo para reivindicar o trono ou lutando por sua independência.
         </p>
-        <button onclick="window.location.href='#cards'">Explorar</button>
+        <button onclick="window.location.href='got.html'">Abrir</button>
       </div>
-      <!-- Cards -->
-      <div class="card-area" id="cards">
-        <h2 class="cor-preto">Series</h2>
-        <!-- game of trhones -->
-        <div class="card">
-          <img src="img/gotdesk.jpg" alt="Game of Thrones">
-          <h3 class="cor-preto">Game Of Thrones</h3>
-          <p class="cor-preto">
-            Situada nos continentes fictícios de Westeros e Essos, a série centra-se no Trono de Ferro dos Sete Reinos e segue um enredo de alianças e conflitos entre as famílias nobres dinásticas, 
-            seja competindo para reivindicar o trono ou lutando por sua independência.
-          </p>
-          <button onclick="window.location.href='got.html'">Abrir</button>
-        </div>
-        <!-- Peaky Blinders -->
-        <div class="card">
-          <img src="img/pbdesk.jpeg" alt="Peaky Blinders">
-          <h3 class="cor-preto">Peaky Blinders</h3>
-          <p class="cor-preto">
-            Em Peaky Blinders, Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército britânico durante a Primeira Guerra Mundial. Shelby e os Peaky Blinders, a gangue de criminosos da qual ele é líder, controlam a cidade com mãos de ferro.
-          </p>
-          <button onclick="window.location.href='pb.html'">Abrir</button>
-        </div>
-        <!-- You -->
-        <div class="card">
-          <img src="img/youdesk.jpg" alt="imagem serie you">
-          <h3 class="cor-preto">You</h3>
-          <p class="cor-preto">
-            Obsessivo e mortalmente charmoso, Joe vai ao extremo para entrar na vida de quem o fascina. Por trás de seus modos gentis, há uma fúria assassina e um passado perturbador.
-          </p>
-          <button onclick="window.location.href='you.html'">Abrir</button>
-        </div>
-        <!-- Mr. Robot -->
-        <div class="card">
-          <img src="img/mrobot.jpg" alt="imagem Mr. Robot">
-          <h3 class="cor-preto">Mr. Robot</h3>
-          <p class="cor-preto">
-            Elliot é um jovem programador que trabalha como engenheiro de segurança virtual durante o dia, e como hacker vigilante durante a noite. Elliot se vê em uma encruzilhada quando é recrutado para destruir a firma que ele é pago para proteger.
-          </p>
-          <button onclick="window.location.href='mrobot.html'">Abrir</button>
-        </div>
-        <!-- Law and Order -->
-        <div class="card">
-          <img src="img/laodesk.jpg" alt="imagem law and order">
-          <h3 class="cor-preto">Law & Order:S.V.U</h3>
-          <p class="cor-preto">
-            Os detetives que fazem parte da Unidade de Vítimas Especias (UVS) do Departamento de Polícia de Nova York (NYPD) investigam crimes de natureza sexual.
-          </p>
-          <button onclick="window.location.href='lao.html'">Abrir</button>
-        </div>
-        <!-- Round 6 -->
-        <div class="card">
-          <img src="img/r6desk.jpg" alt="imagem de Round Six">
-          <h3 class="cor-preto">Round 6</h3>
-          <p class="cor-preto">
-            Round 6, série sul-coreana original da Netflix, acompanha um grupo de pessoas desesperadas por dinheiro que recebem um 
-            misterioso convite para participar de jogos competitivos inspirados em brincadeiras infantis.
-          </p>
-          <button onclick="window.location.href='r6.html'">Abrir</button>
-        </div>
+      <!-- Peaky Blinders -->
+      <div class="card">
+        <img src="img/pbdesk.jpeg" alt="Peaky Blinders">
+        <h3 class="cor-preto">Peaky Blinders</h3>
+        <p class="cor-preto">
+          Em Peaky Blinders, Thomas Shelby e seus irmãos retornam a Birmingham depois de servir no exército britânico
+          durante a Primeira Guerra Mundial. Shelby e os Peaky Blinders, a gangue de criminosos da qual ele é líder,
+          controlam a cidade com mãos de ferro.
+        </p>
+        <button onclick="window.location.href='pb.html'">Abrir</button>
       </div>
-    </main>
-    <footer id="footer">
-      <div class="footer-card">
-        <h3>Gabriel Teodoro</h3>
-        <p>aaaaa eu to maluco</p>
-        <nav>
-          <a href="https://www.linkedin.com/in/gabriel-teodoro-4a1a02235/" target="_blank"><img src="img/linkedin.png" alt=""></a>
-          <a href="https://github.com/Gabriel-Teo" target="_blank"><img src="img/github.png" alt=""></a>
-        </nav>
+      <!-- You -->
+      <div class="card">
+        <img src="img/youdesk.jpg" alt="imagem serie you">
+        <h3 class="cor-preto">You</h3>
+        <p class="cor-preto">
+          Obsessivo e mortalmente charmoso, Joe vai ao extremo para entrar na vida de quem o fascina. Por trás de seus
+          modos gentis, há uma fúria assassina e um passado perturbador.
+        </p>
+        <button onclick="window.location.href='you.html'">Abrir</button>
       </div>
-      <div class="footer-card">
-        <h3>Vanessa Vieira</h3>
-        <p>aaaaa eu to maluca</p>
-        <nav>
-          <a href="https://www.linkedin.com/in/vanessa-vieira-dos-santos-bb0a12114/" target="_blank"><img src="img/linkedin.png" alt=""></a>
-          <a href="https://github.com/VanessaVieira34" target="_blank"><img src="img/github.png" alt=""></a>
-        </nav>
+      <!-- Mr. Robot -->
+      <div class="card">
+        <img src="img/mrobot.jpg" alt="imagem Mr. Robot">
+        <h3 class="cor-preto">Mr. Robot</h3>
+        <p class="cor-preto">
+          Elliot é um jovem programador que trabalha como engenheiro de segurança virtual durante o dia, e como hacker
+          vigilante durante a noite. Elliot se vê em uma encruzilhada quando é recrutado para destruir a firma que ele é
+          pago para proteger.
+        </p>
+        <button onclick="window.location.href='mrobot.html'">Abrir</button>
       </div>
-      <div class="footer-card">
-        <h3>Lucas Nogueira</h3>
-        <p>aaaaa eu to maluco</p>
-        <nav>
-          <a href="https://github.com/Nogget1" target="_blank"><img src="img/github.png" alt=""></a>
-          <a href="https://www.linkedin.com/in/lucas-nogueira-de-almeida-1505161b5/" target="_blank"><img src="img/linkedin.png" alt=""></a>
-        </nav>  
+      <!-- Law and Order -->
+      <div class="card">
+        <img src="img/laodesk.jpg" alt="imagem law and order">
+        <h3 class="cor-preto">Law & Order:S.V.U</h3>
+        <p class="cor-preto">
+          Os detetives que fazem parte da Unidade de Vítimas Especias (UVS) do Departamento de Polícia de Nova York
+          (NYPD) investigam crimes de natureza sexual.
+        </p>
+        <button onclick="window.location.href='lao.html'">Abrir</button>
       </div>
-      <p>Checkpoint 2 desenvolvido em 2022</p>
-    </footer>
+      <!-- Round 6 -->
+      <div class="card">
+        <img src="img/r6desk.jpg" alt="imagem de Round Six">
+        <h3 class="cor-preto">Round 6</h3>
+        <p class="cor-preto">
+          Round 6, série sul-coreana original da Netflix, acompanha um grupo de pessoas desesperadas por dinheiro que
+          recebem um
+          misterioso convite para participar de jogos competitivos inspirados em brincadeiras infantis.
+        </p>
+        <button onclick="window.location.href='r6.html'">Abrir</button>
+      </div>
+    </div>
+  </main>
+  <footer id="footer">
+    <div class="footer-card">
+      <h3>Gabriel Teodoro</h3>
+      <p>aaaaa eu to maluco</p>
+      <nav>
+        <a href="https://www.linkedin.com/in/gabriel-teodoro-4a1a02235/" target="_blank"><img src="img/linkedin.png"
+            alt=""></a>
+        <a href="https://github.com/Gabriel-Teo" target="_blank"><img src="img/github.png" alt=""></a>
+      </nav>
+    </div>
+    <div class="footer-card">
+      <h3>Vanessa Vieira</h3>
+      <p>aaaaa eu to maluca</p>
+      <nav>
+        <a href="https://www.linkedin.com/in/vanessa-vieira-dos-santos-bb0a12114/" target="_blank"><img
+            src="img/linkedin.png" alt=""></a>
+        <a href="https://github.com/VanessaVieira34" target="_blank"><img src="img/github.png" alt=""></a>
+      </nav>
+    </div>
+    <div class="footer-card">
+      <h3>Lucas Nogueira</h3>
+      <p>aaaaa eu to maluco</p>
+      <nav>
+        <a href="https://www.linkedin.com/in/lucas-nogueira-de-almeida-1505161b5/" target="_blank"><img
+            src="img/linkedin.png" alt=""></a>
+        <a href="https://github.com/Nogget1" target="_blank"><img src="img/github.png" alt=""></a>
+      </nav>
+    </div>
+    <p class="data-cria">Checkpoint 2 desenvolvido em 2022</p>
+  </footer>
 </body>
+
 </html>

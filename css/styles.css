@@ -10,15 +10,25 @@
     margin: 0;
 }
 
-.cor-branco{color: #e5e5e5;}
-.cor-laranja {color: #ffa500}
-.cor-preto{color: #171717;}
+.cor-branco {
+    color: #e5e5e5;
+}
 
-html, body {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+.cor-laranja {
+    color: #ffa500
+}
+
+.cor-preto {
+    color: #171717;
+}
+
+html,
+body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     padding: 0px;
     margin: 0px;
 }
+
 body {
     background-color: #e5e5e5;
     color: #fff;
@@ -27,15 +37,23 @@ body {
 /*===== HEADER AREA =====*/
 header {
     display: flex;
+    position: fixed;
+    z-index: 2;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 16px;
     background-color: #171717;
 }
+
 /* Logo area */
-.logo {color: #fff;}
-.logo a{text-decoration: solid;}
+.logo {
+    color: #fff;
+}
+
+.logo a {
+    text-decoration: solid;
+}
 
 /* Dropdown area*/
 .dropdown {
@@ -43,12 +61,14 @@ header {
     display: inline-block;
     margin: 13px;
 }
+
 /* Botão do dropdown */
 .dropbtn {
     border: none;
     transition: 0.4s;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
+
 /* Conteudo do dropdown (escondido) */
 .dropdown-content {
     display: none;
@@ -56,9 +76,10 @@ header {
     right: -29px;
     top: 56px;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
+
 /* Links dentro do menu */
 .dropdown-content a {
     color: black;
@@ -68,12 +89,21 @@ header {
     display: block;
     transition: 0.2s;
 }
+
 /* muda a cor de fundo no hover */
-.dropdown-content a:hover {background-color: #e49500;}
+.dropdown-content a:hover {
+    background-color: #e49500;
+}
+
 /* Mostra o conteudo quando clica */
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* Cresce o Botão quando clica */
-.dropdown:hover .dropbtn {transform: scale(150%);}
+.dropdown:hover .dropbtn {
+    transform: scale(150%);
+}
 
 /*===== HEADER AREA =====*/
 /*===== CONTEUDO AREA =====*/
@@ -92,24 +122,32 @@ header {
     color: #fff;
     box-shadow: 0px 400px 400px black inset;
 }
+
 /* banner button */
-.banner button{
+.banner button {
     padding: 20px 80px;
     background-color: rgba(255, 166, 0, 0.389);
     border-style: solid;
     border-color: #ffa500;
     transition: 0.2s;
 }
+
 /* Efeito de 'click' */
-.banner button:hover {background-color: rgba(226, 147, 0, 0.838);}
+.banner button:hover {
+    background-color: rgba(226, 147, 0, 0.838);
+}
+
 /* CARD-Area */
 .card-area {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: bla;
 }
-.card-area h2{margin-top: 30px;}
+
+.card-area h2 {
+    margin-top: 30px;
+}
+
 /* card */
 .card {
     display: flex;
@@ -122,36 +160,45 @@ header {
     transition: 0.5s;
     background-color: #ffa500;
 }
+
 /* Efeito Hover */
 .card:hover {
     box-shadow: 0 10px 10px -10px black;
     transform: scale(102%);
 }
+
 /* config da imagem */
-.card img{
+.card img {
     width: 100%;
     height: 45%;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+
 /* ajuste de margem */
-.card h3 {margin-left: 26px;margin-top: 5px;}
+.card h3 {
+    margin-left: 26px;
+    margin-top: 5px;
+}
+
 .card p {
     margin-left: 26px;
     margin-top: 10px;
     margin-right: 26px;
     text-align: justify;
 }
+
 /* config botão */
 .card button {
     margin-top: auto;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     width: 70%;
     padding: 20px;
     align-self: center;
     background-color: black;
     border: solid;
 }
+
 /*===== FOOTER AREA =====*/
 footer {
     display: flex;
@@ -161,15 +208,86 @@ footer {
     padding: 42px;
     gap: 32px;
 }
+
 .footer-card {
     width: 80%;
 }
-/* ajuste de margem */
-.footer-card p{margin-bottom: 5px;}
-.footer-card a{margin-right: 10px;}
 
-@media(min-width: 700px){
-   footer{
-       display: flex;
-       flex-direction: row;
-   }
+/* ajuste de margem */
+.footer-card p {
+    margin-bottom: 5px;
+}
+
+.footer-card a {
+    margin-right: 10px;
+}
+
+@media (min-width: 426px) {
+
+    .dropbtn {
+        display: none;
+    }
+
+    .dropdown-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+
+    .dropdown-content a {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+
+    .card-area {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-area h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card {
+        width: 450px;
+        height: 50vh;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer-card {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .footer-card:nth-child(1) {
+        align-items: flex-start;
+    }
+
+    .footer-card:nth-child(2) {
+        align-items: center;
+    }
+
+    .footer-card:nth-child(3) {
+        align-items: flex-end;
+    }
+
+    .data-cria {
+        width: 100%;
+        text-align: center;
+    }
+}
