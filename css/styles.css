@@ -167,3 +167,20 @@ footer {
 /* ajuste de margem */
 .footer-card p{margin-bottom: 5px;}
 .footer-card a{margin-right: 10px;}
+
+@media (min-width: 426px) {
+
+.dropbtn {display: none;}
+.dropdown-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+}
+.dropdown-content a {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+}
+.dropdown:hover .dropdown-content {display: flex;}
+}
