@@ -280,6 +280,21 @@ footer {
         display: flex;
     }
 
+    .video {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .video h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .video iframe {
+        width: 60vw;
+    }
+
     footer {
         display: flex;
         flex-direction: row;
