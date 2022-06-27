@@ -1,2 +1,2 @@
 # Checkpoint-2
-Integrantes : Gabriel Teodoro, Lucas Nogueira, Vanessa Viera
+Integrantes : Gabriel Teodoro, Vanessa Vieira, Lucas Nogueira
