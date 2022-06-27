@@ -27,6 +27,8 @@ body {
 /*===== HEADER AREA =====*/
 header {
     display: flex;
+    position: fixed;
+    z-index: 2;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +48,7 @@ header {
 /* Botão do dropdown */
 .dropbtn {
     border: none;
-    transition: 0.2s;
+    transition: 0.4s;
     background-color: rgba(0,0,0,0);
 }
 /* Conteudo do dropdown (escondido) */
@@ -107,7 +109,6 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: bla;
 }
 .card-area h2{margin-top: 30px;}
 /* card */
@@ -183,4 +184,35 @@ footer {
     background-color: rgba(0, 0, 0, 0);
 }
 .dropdown:hover .dropdown-content {display: flex;}
+
+
+.card-area{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-area h2 {width: 100%; text-align: center;}
+.card {
+    width: 450px;
+    height: 50vh;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-card {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.footer-card:nth-child(1){align-items: flex-start;}
+.footer-card:nth-child(2){align-items: center;}
+.footer-card:nth-child(3){align-items: flex-end;}
+.data-cria {
+    width: 100%;
+    text-align: center;
+}
 }
