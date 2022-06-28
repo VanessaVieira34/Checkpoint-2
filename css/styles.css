@@ -130,6 +130,7 @@ header {
     border-style: solid;
     border-color: #ffa500;
     transition: 0.2s;
+    margin-top: 15px;
 }
 
 /* Efeito de 'click' */
